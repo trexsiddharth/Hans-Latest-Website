@@ -23,21 +23,31 @@
     background-size: cover;
 }
 .vcenter{
-margin-top: 5em
+margin-top: 2em
 }
 .bot{
     padding-bottom: 45px
 }
 .whats {
     margin-top: 1rem;
+    width: 20rem;
     margin-bottom: 2rem;
+}
+.textWhats {
+    font-size: 14px;
+}
+.center {
+    font-size: 1.6rem;
+}
+.text-left{
+    margin-top: 50px;
 }
 .cards{
     background:url(https://wallpapercave.com/wp/2ujUKnj.jpg);height:4rem;margin-left:10%;margin-right:10%;border-radius:0
 }
 .sliding {
     width: 100%;
-    height: 45rem;
+    height: 30rem;
 }
 .deepak{
     height:20rem
@@ -66,8 +76,13 @@ margin-top: 5em
     top: -4rem;
     left: 4rem
 }
+.bannerHead {
+    font-size: 22px;
+    text-align: center;
+    color: white;
+}
 .trust{
-    height:4rem;
+    height:3rem;
     margin-left:0%;
 }
 
@@ -204,6 +219,10 @@ reisterf-btn{
         margin-left: 0%;
         margin-top: 0%
     }
+    .bannerHead {
+        color: white;
+        font-size: 14px;
+    }
     .trust{
         height: 2rem;
         text-align: center;
@@ -301,6 +320,10 @@ reisterf-btn{
         margin-left:5px
     }
     .text-left{
+        text-align: center !important;
+        margin-top: 35px;
+    }
+    .personalised-left{
         text-align: center !important;
         margin-top: 35px;
     }

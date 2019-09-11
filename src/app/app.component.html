@@ -1,11 +1,50 @@
 <!-- Navbar start -->
 <div *ngIf="header">
 <header>
-  <div class="card" style="max-height:40px;
+  <!-- <div class="card" style="max-height:40px;
         border-radius:0 !important;background-color: #7b1429" *ngIf="routerUrl != '/hanswebapp/dashboard'">
     <p class="contact-details text-right">help@hansmatrimony.com +919697989697 </p>
-  </div>
-  <nav id="navbar" class="navbar navbar-expand-md fixed-top navBarTop " style="background-color:whitesmoke;">
+  </div> -->
+
+  <!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-1 navbar-light amber lighten-2" [containerInside]="false" style="background: black;" >
+
+  <!-- Navbar brand -->
+  <mdb-navbar-brand><a class="navbar-brand" href="#" style="padding: 0px; margin:0px"><img src="../../assets/Icons/unnamed.jpg" class="banner-img"></a></mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links>
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+              <a class="nav-link waves-light" mdbWavesEffect><button class="btn btn-warning btn-responsive" (click)="subscription()">Subscription</button>
+                &nbsp; &nbsp; &nbsp;<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link waves-light" mdbWavesEffect><button class="btn btn-warning btn-responsive login" data-toggle="modal" *ngIf=" isLogin=='false'"
+                data-target="#loginModal">Login/Register</button>
+              &nbsp;</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link waves-light" mdbWavesEffect><button class="btn btn-warning btn-responsive" type="submit" *ngIf="isLogin=='true'"
+                (click)="logout()">Logout</button></a>
+          </li>
+      </ul>
+      <!-- Links -->
+  </links>
+  <!-- Collapsible content -->
+
+</mdb-navbar>
+<!--/.Navbar-->
+
+
+
+
+
+
+
+  <!-- <nav id="navbar" class="navbar navbar-expand-md fixed-top navBarTop " style="background-color:whitesmoke;padding:0px;">
     <a class="navbar-brand" href="#" style="color:white;margin-right:0.1rem;padding-top:0;padding-bottom: 0">
       <img src="../../assets/Icons/unnamed.jpg" class="banner-img"></a>
     <button class="navbar-toggler" type="button" (click)="myFunction()" id="toggle" data-toggle="collapse"
@@ -31,12 +70,11 @@
         <button class="btn btn-warning btn-responsive login" data-toggle="modal" *ngIf=" isLogin=='false'"
           data-target="#loginModal">Login/Register</button>
         &nbsp;
-
         <button class="btn btn-warning btn-responsive" type="submit" *ngIf="isLogin=='true'"
           (click)="logout()">Logout</button>
       </form>
     </div>
-  </nav>
+  </nav> -->
 </header>
 </div>
 <!-- Navbar end -->
@@ -47,9 +85,9 @@
 <router-outlet (activate)="changeOfRoutes()"></router-outlet>
 <div class="footer" *ngIf="footer">
   <br>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-3 text-center">
+  <div class="container" style="padding: 0px 0px;">
+    <div class="row" style="margin: 0px 0px;">
+      <div class="col-md-4 col-4 text-center">
         <h4 style="color:white; font-weight: bold">Contact</h4>
         <p style="color:white; margin-bottom: 8px;" class="sizeIt">
           9697989697
@@ -57,7 +95,7 @@
         <span style="color:white;" class="sizeIt">matches@hansmatrimony.com</span>
         
       </div>
-      <div class="col-md-5 col-5 text-center">
+      <div class="col-md-4 col-4 text-center">
         <h4 style="color:white ;font-weight: bold">Follow Us</h4>
           <i class="fa fa-facebook-official" aria-hidden="true" style="color:white"></i>
           <i class="fa fa-twitter-square" aria-hidden="true" style="color:white"></i>

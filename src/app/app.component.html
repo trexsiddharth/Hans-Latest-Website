@@ -1,50 +1,11 @@
 <!-- Navbar start -->
 <div *ngIf="header">
 <header>
-  <!-- <div class="card" style="max-height:40px;
+  <div class="card" style="max-height:40px;
         border-radius:0 !important;background-color: #7b1429" *ngIf="routerUrl != '/hanswebapp/dashboard'">
     <p class="contact-details text-right">help@hansmatrimony.com +919697989697 </p>
-  </div> -->
-
-  <!--Navbar-->
-<mdb-navbar SideClass="navbar navbar-1 navbar-light amber lighten-2" [containerInside]="false" style="background: black;" >
-
-  <!-- Navbar brand -->
-  <mdb-navbar-brand><a class="navbar-brand" href="#" style="padding: 0px; margin:0px"><img src="../../assets/Icons/unnamed.jpg" class="banner-img"></a></mdb-navbar-brand>
-
-  <!-- Collapsible content -->
-  <links>
-
-      <!-- Links -->
-      <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-              <a class="nav-link waves-light" mdbWavesEffect><button class="btn btn-warning btn-responsive" (click)="subscription()">Subscription</button>
-                &nbsp; &nbsp; &nbsp;<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link waves-light" mdbWavesEffect><button class="btn btn-warning btn-responsive login" data-toggle="modal" *ngIf=" isLogin=='false'"
-                data-target="#loginModal">Login/Register</button>
-              &nbsp;</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link waves-light" mdbWavesEffect><button class="btn btn-warning btn-responsive" type="submit" *ngIf="isLogin=='true'"
-                (click)="logout()">Logout</button></a>
-          </li>
-      </ul>
-      <!-- Links -->
-  </links>
-  <!-- Collapsible content -->
-
-</mdb-navbar>
-<!--/.Navbar-->
-
-
-
-
-
-
-
-  <!-- <nav id="navbar" class="navbar navbar-expand-md fixed-top navBarTop " style="background-color:whitesmoke;padding:0px;">
+  </div>
+  <nav id="navbar" class="navbar  fixed-top navBarTop " style="background-color:whitesmoke;padding:0px;">
     <a class="navbar-brand" href="#" style="color:white;margin-right:0.1rem;padding-top:0;padding-bottom: 0">
       <img src="../../assets/Icons/unnamed.jpg" class="banner-img"></a>
     <button class="navbar-toggler" type="button" (click)="myFunction()" id="toggle" data-toggle="collapse"
@@ -65,16 +26,17 @@
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <button class="btn btn-warning btn-responsive" (click)="subscription()">Subscription</button>
+        <button style="margin-bottom: 20px" class="btn btn-warning btn-responsive" (click)="subscription()">Subscription</button>
         &nbsp; &nbsp; &nbsp;
-        <button class="btn btn-warning btn-responsive login" data-toggle="modal" *ngIf=" isLogin=='false'"
+        <button  style="margin-bottom: 20px" class="btn btn-warning btn-responsive login" data-toggle="modal" *ngIf=" isLogin=='false'"
           data-target="#loginModal">Login/Register</button>
         &nbsp;
-        <button class="btn btn-warning btn-responsive" type="submit" *ngIf="isLogin=='true'"
+
+        <button style="margin-bottom: 20px" class="btn btn-warning btn-responsive" type="submit" *ngIf="isLogin=='true'"
           (click)="logout()">Logout</button>
       </form>
     </div>
-  </nav> -->
+  </nav>
 </header>
 </div>
 <!-- Navbar end -->

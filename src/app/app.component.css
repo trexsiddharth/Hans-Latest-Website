@@ -21,6 +21,7 @@ lib-ngx-notification{
 }
 .banner-img{
     height : 3rem;
+    margin-left: 16px;
 }
 .navBarTop {
     padding-bottom: 0.2rem;
@@ -56,6 +57,7 @@ lib-ngx-notification{
 
     .banner-img{
         height : 3rem;
+        margin-left: 16px;
     }
     .follow{
         margin-left: 5%;

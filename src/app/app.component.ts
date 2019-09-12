@@ -87,6 +87,8 @@ export class AppComponent implements OnInit {
       }
       this.isLogin='true';
       document.getElementById('navbar').style.zIndex='200';
+      document.body.style.backgroundImage="url(assets/bgicon.png)";
+      document.body.style.backgroundSize="cover";
     }
     else
     {
@@ -107,6 +109,7 @@ export class AppComponent implements OnInit {
      {
       document.getElementById('backBtn').style.display = '';     
      }
+     document.body.style.backgroundImage="";
   }
  
   myFunction()

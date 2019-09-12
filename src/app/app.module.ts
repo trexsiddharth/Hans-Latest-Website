@@ -9,7 +9,7 @@ import { SocialLoginModule, AuthServiceConfig, GoogleLoginProvider, FacebookLogi
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatButtonModule } from '@angular/material/button';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
-import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
+// import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
 
 import {
   MatFormFieldModule, MatDatepickerModule, MatIconModule, MatInputModule, MatButtonToggleModule,
@@ -95,7 +95,7 @@ export function provideConfig() {
     NgMultiSelectDropDownModule.forRoot(),
     NgbModule,
     Angular5TimePickerModule,
-    AngularMultiSelectModule,
+    // AngularMultiSelectModule,
     CommonModule,
     BrowserModule,
     SnotifyModule,
@@ -120,7 +120,7 @@ export function provideConfig() {
     SocialLoginModule,
     HttpClientModule,MatTooltipModule,
     MatTabsModule,NgxNotificationModule,FormsModule,HttpClientModule,
-    OwlDateTimeModule,OwlNativeDateTimeModule
+    OwlDateTimeModule,OwlNativeDateTimeModule,
   ],
   providers: [{provide : 'SnotifyToastConfig' , useValue: ToastDefaults}, AuthService , SnotifyService, {
     provide: AuthServiceConfig,

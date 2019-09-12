@@ -701,23 +701,17 @@ mat-form-field{
     font-size: 16px;
 }
 
-.dropdown-menu
-{
-    li a
-    {
-        padding: 2px 5px !important;
-        color: #222 !important;
-        font-size: 15px;
-
-        .fa
-        {
-            font-size: inherit !important;
-            padding: 0 !important;
-            color: inherit !important;
-            width: 20px !important;
-            height: unset !important;
-        }
-    }
+.dropdown-menu li a {
+  padding: 2px 5px !important;
+  color: #222 !important;
+  font-size: 15px;
+}
+.dropdown-menu li a .fa {
+  font-size: inherit !important;
+  padding: 0 !important;
+  color: inherit !important;
+  width: 20px !important;
+  height: unset !important;
 }
 
 .btn-blue,
